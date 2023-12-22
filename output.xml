@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.0 on win32)" generated="20231221 17:10:08.219" rpa="false" schemaversion="4">
+<suite id="s1" name="Test" source="e:\UAS\testingqa\test.robot">
+<test id="s1-t1" name="Testcase-Input-Text" line="9">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231221 17:10:10.235" level="INFO">Opening browser 'Chrome' to base url 'https://demoqa.com/text-box'.</msg>
+<status status="PASS" starttime="20231221 17:10:10.212" endtime="20231221 17:10:18.780"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>xpath://input[@id='userName']</arg>
+<arg>timeout=10s</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20231221 17:10:19.060" endtime="20231221 17:10:19.219"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:userName</arg>
+<arg>Muhammad Iqbal</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231221 17:10:19.236" level="INFO">Typing text 'Muhammad Iqbal' into text field 'id:userName'.</msg>
+<status status="PASS" starttime="20231221 17:10:19.226" endtime="20231221 17:10:21.013"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:userEmail</arg>
+<arg>iqbal@gmail.com</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231221 17:10:21.028" level="INFO">Typing text 'iqbal@gmail.com' into text field 'id:userEmail'.</msg>
+<status status="PASS" starttime="20231221 17:10:21.017" endtime="20231221 17:10:21.534"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:currentAddress</arg>
+<arg>Bogor,Indonesia.</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231221 17:10:21.730" level="INFO">Typing text 'Bogor,Indonesia.' into text field 'id:currentAddress'.</msg>
+<status status="PASS" starttime="20231221 17:10:21.705" endtime="20231221 17:10:22.273"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>id:permanentAddress</arg>
+<arg>Bogor,Indonesia.</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231221 17:10:22.297" level="INFO">Typing text 'Bogor,Indonesia.' into text field 'id:permanentAddress'.</msg>
+<status status="PASS" starttime="20231221 17:10:22.282" endtime="20231221 17:10:22.766"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath://button[@id='submit']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231221 17:10:22.784" level="INFO">Clicking element 'xpath://button[@id='submit']'.</msg>
+<status status="PASS" starttime="20231221 17:10:22.773" endtime="20231221 17:10:22.992"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>100s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231221 17:12:03.048" level="INFO">Slept 1 minute 40 seconds</msg>
+<status status="PASS" starttime="20231221 17:10:23.040" endtime="20231221 17:12:03.048"/>
+</kw>
+<status status="PASS" starttime="20231221 17:10:10.199" endtime="20231221 17:12:03.048"/>
+</test>
+<status status="PASS" starttime="20231221 17:10:08.259" endtime="20231221 17:12:03.079"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
